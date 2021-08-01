@@ -1,10 +1,19 @@
-<nav class="header">
-    <div class="header__container">
-        <div class="header__container__logo">
-            <a href="/">JM</a>
-        </div>
-        <div class="header__container__menu">
-            
-        </div>
+<nav class="header">    
+    <div class="header__logo">
+        <a href="/">J<span>M</span></a>
     </div>
+    <div class="header__menu">
+        <h5>Menu</h5>
+        <button mdbBtn type="button" mdbWavesEffect (click)="handleMenuClick()">
+            <mdb-icon fas icon="magic" class="ml-1"></mdb-icon>
+        </button>
+        <ul [ngClass] = "{hide : showMenu}">
+            <li><a>Qui suis-je ?</a></li>
+            <li><a>Ce que je sais faire </a></li>
+            <li><a>Langages et outils utilisés</a></li>
+            <li><a>Services à rendre</a></li>
+            <li><a>Projets réalisés</a></li>
+            <li><a>Me contacter</a></li>
+        </ul>
+    </div>   
 </nav>

@@ -1,13 +1,12 @@
 @import "../../../assets/scss/variables.scss";
+@import "../../../assets/scss/mixins.scss";
 .banner {
   width: 100%;
   height: 100vh;
   position: relative;
   background-color: #111;
   .banner__image {
-    position: absolute;
-    height: inherit;
-    width: inherit;
+    @include absoluteCoverPosition();
     background: url("../../../assets/images/jordan-bg.png") no-repeat;
     background-size: contain;
     background-attachment: fixed;
@@ -15,33 +14,19 @@
     opacity: 0.9;
   }
   .banner__overlay {
-    position: absolute;
-    height: inherit;
-    width: inherit;
+    @include absoluteCoverPosition();
     background-color: #111;
     opacity: 0.97;
   }
   .banner__container {
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    @include absoluteCoverPosition();
+    @include flex(column, center, center);
     h1 {
-      color: $second-color;
-      font-size: 75px;
-      margin: 0;
-      font-family: $primary-font;
+      @include mainTitle($second-color, 75px, $primary-font);
     }
 
     p {
-      color: #fff;
-      font-size: 50px;
-      margin: 0;
-      font-family: $secondary-font;
+      @include mainTitle(#fff, 50px, $secondary-font);
     }
   }
 }

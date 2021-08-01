@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
+  showMenu  = false;
+  handleMenuClick(){
+    this.showMenu = !this.showMenu;
+  }
 
   ngOnInit(): void {
   }

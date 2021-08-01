@@ -1,0 +1,17 @@
+@mixin flex($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin absoluteCoverPosition {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+@mixin mainTitle($color, $size, $font) {
+  color: $color;
+  font-size: $size;
+  margin: 0;
+  font-family: $font;
+}

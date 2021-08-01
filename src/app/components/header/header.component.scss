@@ -1,10 +1,63 @@
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/variables.scss";
+
 .header {
   margin: 0;
-  border: 1px solid red;
   height: 10vh;
   width: 100%;
   position: fixed;
   top: 0;
   background-color: transparent;
   z-index: 2;
+  padding: 0 20px;
+  @include flex(row, space-between, center);
+  .header__logo {
+    a {
+      font-size: 40px;
+      font-family: $secondary-font;
+      color: #fff;
+      span {
+        color: $second-color;
+      }
+    }
+  }
+  .header__menu {
+    position: relative;
+    @include flex(row, center, center);
+    h5 {
+      color: #fff;
+      font-family: $secondary-font;
+    }
+    button {
+      color: $second-color;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 15px 10px;
+    }
+
+    ul {
+      &.hide {
+        display: none;
+      }
+      position: absolute;
+      top: 8vh;
+      width: 700px;
+      background-color: #fff;
+      padding: 10px 20px;
+      @include flex(column, center, flex-start);
+      li {
+        list-style: none;
+        padding: 10px 0;
+        a {
+          font-size: 22px;
+          color: $primary-color;
+          font-family: $secondary-font;
+          position: relative;
+          &:hover {
+            color: $second-color;
+          }
+        }
+      }
+    }
+  }
 }
