@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
   handleMenuClick(){
     this.showMenu = !this.showMenu;
   }
-
   ngOnInit(): void {
   }
 

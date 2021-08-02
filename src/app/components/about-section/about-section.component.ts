@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-section.component.scss']
 })
 export class AboutSectionComponent implements OnInit {
-
+  currentTitle : "Qui suis-je ?";
   constructor() { }
 
   ngOnInit(): void {

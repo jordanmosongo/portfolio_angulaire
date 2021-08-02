@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import {BannerComponent} from './components/banner/banner.component';
 import {AboutSectionComponent} from './components/about-section/about-section.component';
+import { TitleComponent } from './components/shared/title/title.component';
+import { CardComponent } from './components/shared/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    TitleComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

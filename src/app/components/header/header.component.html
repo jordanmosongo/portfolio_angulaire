@@ -7,7 +7,7 @@
         <button mdbBtn type="button" mdbWavesEffect (click)="handleMenuClick()">
             <mdb-icon fas icon="magic" class="ml-1"></mdb-icon>
         </button>
-        <ul [ngClass] = "{hide : showMenu}">
+        <ul [ngClass] = "{hide : !showMenu}">
             <li><a>Qui suis-je ?</a></li>
             <li><a>Ce que je sais faire </a></li>
             <li><a>Langages et outils utilisés</a></li>
