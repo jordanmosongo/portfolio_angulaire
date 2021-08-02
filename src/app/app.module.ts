@@ -10,6 +10,8 @@ import {AboutSectionComponent} from './components/about-section/about-section.co
 import { TitleComponent } from './components/shared/title/title.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ToolsComponent } from './components/tools/tools.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     AboutSectionComponent,
     TitleComponent,
     CardComponent,
-    SkillsComponent
+    SkillsComponent,
+    ToolsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
